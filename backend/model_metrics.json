@@ -1,0 +1,72 @@
+{
+  "dataset_file": "sleep_health.csv",
+  "rows_in_file": 374,
+  "rows_with_target": 155,
+  "feature_columns": [
+    "Gender",
+    "Age",
+    "Occupation",
+    "Sleep Duration",
+    "Quality of Sleep",
+    "Physical Activity Level",
+    "Stress Level",
+    "BMI Category",
+    "Blood Pressure",
+    "Heart Rate",
+    "Daily Steps"
+  ],
+  "target_column": "Sleep Disorder",
+  "classes": [
+    "Insomnia",
+    "Sleep Apnea"
+  ],
+  "train_rows": 124,
+  "test_rows": 31,
+  "random_state": 42,
+  "accuracy": 0.9032,
+  "macro_precision": 0.9042,
+  "macro_recall": 0.9042,
+  "macro_f1": 0.9032,
+  "confusion_matrix_labels": [
+    "Insomnia",
+    "Sleep Apnea"
+  ],
+  "confusion_matrix": [
+    [
+      14,
+      1
+    ],
+    [
+      2,
+      14
+    ]
+  ],
+  "classification_report": {
+    "Insomnia": {
+      "precision": 0.875,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9032258064516129,
+      "support": 15.0
+    },
+    "Sleep Apnea": {
+      "precision": 0.9333333333333333,
+      "recall": 0.875,
+      "f1-score": 0.9032258064516129,
+      "support": 16.0
+    },
+    "accuracy": 0.9032258064516129,
+    "macro avg": {
+      "precision": 0.9041666666666667,
+      "recall": 0.9041666666666667,
+      "f1-score": 0.9032258064516129,
+      "support": 31.0
+    },
+    "weighted avg": {
+      "precision": 0.9051075268817205,
+      "recall": 0.9032258064516129,
+      "f1-score": 0.9032258064516129,
+      "support": 31.0
+    }
+  },
+  "note": "Academic dataset classification only; not clinical validation."
+}
